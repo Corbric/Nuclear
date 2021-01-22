@@ -14,6 +14,10 @@ repositories {
 	mavenCentral()
 	jcenter()
 	maven {
+		name = "Jitpack"
+		url = "https://jitpack.io"
+	}
+	maven {
 		name = 'legacy-fabric'
 		url = 'https://dl.bintray.com/legacy-fabric/Legacy-Fabric-Maven'
 	}
@@ -32,6 +36,9 @@ dependencies {
 	modImplementation ("net.fabricmc:fabric-loader-1.8.9:${project.loader_version}") {
 		exclude module: "guava"
 	}
+
+	//Corbric libraries to help with server side dev
+	modImplementation 'com.github.Corbric:SwiftAPI:a8311b1397'
 
 	if (System.getProperty("os.name").toLowerCase().contains("mac")) {
 		implementation 'org.lwjgl.lwjgl:lwjgl_util:2.9.4-nightly-20150209'

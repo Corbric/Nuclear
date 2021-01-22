@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "nuclear",
   "version": "${version}",
 
-  "name": "Corbric Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Nuclear",
+  "description": "Its like lithium but no one cares about vanilla!",
   "authors": [
     "hydos"
   ],
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/nuclear/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.corbric.example.ExampleMod"
+      "io.github.corbric.nuclear.Nuclear"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "nuclear.mixins.json"
   ],
 
   "depends": {

@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "io.github.corbric.example.mixin",
+  "package": "io.github.corbric.nuclear.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "MobEntityMixin"
   ],
   "client": [
   ],
