@@ -25,7 +25,7 @@ public abstract class MobEntityMixin extends LivingEntity {
 
 	@Inject(method = "tickNewAi", at = @At("HEAD"), cancellable = true)
 	private void nuclearTickNewAi(CallbackInfo ci) {
-		if(Nuclear.config.minimalTickMobAi && this instanceof NeedsAi) {
+		if(Nuclear.config.minimalTickMobAi || this instanceof NeedsAi) {
 			++this.field_7451;
 			this.world.profiler.push("checkDespawn");
 			this.checkDespawn();

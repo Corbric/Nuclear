@@ -4,7 +4,9 @@
   "package": "io.github.corbric.nuclear.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MobEntityMixin"
+    "DimensionMixin",
+    "MobEntityMixin",
+    "WorldMixin"
   ],
   "client": [
   ],
